@@ -17,14 +17,29 @@ let main argv =
 
     let appendedList = threes |> List.append fives
 
-    let distinctList = appendedList |> Seq.distinct |> List.ofSeq
-
-    let totalSum = 
-        distinctList
-            |> List.sumBy ( fun b -> b)
-
+    let totalSum = appendedList |> Seq.distinct |> Seq.sum
 
     printfn "the sum of all the multiples of 3 or 5 below 1000: %d" totalSum
+
+
+    //Problem2
+    //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+    let fibs = 
+        let rec f a b = 
+            seq { yield a
+                  yield! f b (a+b) }
+        f 1 1
+        |> Seq.cache
+
+    
+    let evennumbers = 
+        fibs
+            |> Seq.takeWhile (fun a -> a < 4000000)
+            |> Seq.filter ( fun a -> a % 2 = 0 )
+            |> Seq.sum
+            
+
+
 
     //End projectEuler
     let key = System.Console.ReadKey();
