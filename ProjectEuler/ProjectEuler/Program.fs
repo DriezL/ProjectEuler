@@ -15,11 +15,11 @@ let main argv =
         naturalNumbers
             |> List.filter (fun a -> a % 5 = 0)
 
-    let appendedList = threes |> List.append fives
+    let appendedList = threes @ fives
 
     let totalSum = appendedList |> Seq.distinct |> Seq.sum
 
-    printfn "the sum of all the multiples of 3 or 5 below 1000: %d" totalSum
+    printfn "PROBLEM #1, the sum of all the multiples of 3 or 5 below 1000: %d" totalSum
 
 
     //Problem2
@@ -38,7 +38,24 @@ let main argv =
             |> Seq.filter ( fun a -> a % 2 = 0 )
             |> Seq.sum
             
+    printfn "PROBLEM #2, the sum of even-valued terms: %d" evennumbers
 
+
+    //Problem5
+    //2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+    //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+    let canBeDividedBy num div = num % div = 0
+    let canBeDividedByAll num numbers = numbers |> Seq.forall(fun c-> canBeDividedBy num c)
+
+    let numbers = [|1..20|]
+
+    let smallestNumber =
+        Seq.unfold(function x -> Some(x, x+1)) 20
+                    |> Seq.filter(fun f -> canBeDividedByAll f numbers)
+                    |> Seq.head
+
+    printfn "PROBLEM #5, Smallest multiple: %d" smallestNumber
 
 
     //End projectEuler
