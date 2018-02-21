@@ -1,8 +1,0 @@
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\bin\Debug\ProjectEuler.exe.config
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\bin\Debug\ProjectEuler.XML
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\bin\Debug\ProjectEuler.exe
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\bin\Debug\ProjectEuler.pdb
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\bin\Debug\FSharp.Core.dll
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\bin\Debug\FSharp.Core.xml
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\obj\Debug\ProjectEuler.exe
-D:\driesdg\Documents\github\ProjectEuler\ProjectEuler\ProjectEuler\obj\Debug\ProjectEuler.pdb
