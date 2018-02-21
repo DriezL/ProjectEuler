@@ -3,42 +3,17 @@
 [<EntryPoint>]
 let main argv = 
 
-    printfn("geef probleem # of 0 voor allemaal (zal een tijd duren)")
+    printfn("geef probleem # [1,2,3 of 5]")
 
-    //let rec readlines () = seq {
-    //    let line = Console.ReadLine()
-    //    if line <> null then
-    //        yield line
-    //        yield! readlines ()
-    //    }
+    let key = System.Console.ReadLine()
 
-    //let SolveForMe (input:int) = 
-    //    match input with
-    //        | 1 -> Problem1.solve()
-    //        | 2 -> Problem2.solve()
-    //        | _ -> printfn "nothing"
-        
-    //    0
+    match key with
+        | "1" -> Problem1.solve()
+        | "2" -> Problem2.solve()
+        | "3" -> Problem3.solve()
+        | "5" -> Problem5.solve()
+        | _ -> printfn "nothing"
 
-    //let mutable input = Console.Read()
-    //while input <> 0
-    //   do
-
-    //   if input <> 0
-    //   then
-    //       SolveForMe input
-    //       Console.Write "\nEnter input:"
-    //       input <- Console.Read()
-
-
-    //printfn readlines()
-
-    Problem1.solve()
-    Problem2.solve()
-//    Problem3.solve()
-//    Problem5.solve()
-
-    //SolveForMe
 
     //End projectEuler
     printfn "<Enter> to end"
