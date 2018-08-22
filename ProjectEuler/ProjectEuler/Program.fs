@@ -1,4 +1,5 @@
 ﻿open System
+open Dries.ProjectEuler
 
 [<EntryPoint>]
 let main argv = 
@@ -35,6 +36,8 @@ let main argv =
 
     Problem1.solve()
     Problem2.solve()
+    //Problem3.solve()
+    
 //    Problem3.solve()
 //    Problem5.solve()
 

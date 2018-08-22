@@ -1,4 +1,4 @@
-﻿module Problem1 
+﻿module Dries.ProjectEuler.Problem1 
 
     let solve() =
         //Problem 1: 
